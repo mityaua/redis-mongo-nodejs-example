@@ -1,5 +1,5 @@
 const { MongoClient, ServerApiVersion } = require("mongodb");
-const URI = process.env.DB_HOST;
+const URI = process.env.MONGO_HOSTNAME;
 
 const mongoClient = new MongoClient(URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
